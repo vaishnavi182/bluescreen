@@ -1,5 +1,9 @@
 version: 1
-cron: 
+phases:
+  install:
+    runtime-versions:
+      nodejs: 8
+buildspec: 
   - name: "task1"
     url: "/scheduled"
     schedule: "* * * * *"
