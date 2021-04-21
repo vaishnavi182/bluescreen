@@ -1,4 +1,4 @@
-version: 8
+version: 0.2
 buildspec: 
   - name: "task1"
     url: "/scheduled"
