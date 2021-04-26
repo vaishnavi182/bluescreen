@@ -3,3 +3,16 @@ buildspec:
   - name: "task1"
     url: "/scheduled"
     schedule: "* * * * *"
+phases:
+  pre_build:
+    commands:
+    - echo "Entered the pre-build phase"
+  build:
+    commands:
+    - echo "Entered build phase"
+  post_build:
+    commands:
+    - echo "Entered the post-build phase"
+  artifacts:
+  files:
+    - deploy/**/*
